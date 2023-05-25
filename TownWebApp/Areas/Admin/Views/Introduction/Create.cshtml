@@ -1,0 +1,39 @@
+﻿@model IntroductionCreateVM
+<div class="col-lg-8 col-xlg-9 col-md-12">
+    <div class="card">
+        <div class="card-body">
+            <form class="form-horizontal form-material" method="post">
+                <div class="form-group mb-4">
+                    <label class="col-md-12 p-0" asp-for="IconName"></label>
+                    <div class="col-md-12 border-bottom p-0">
+                        <input asp-for="IconName" placeholder="IconName"
+                               class="form-control p-0 border-0">
+                        <span asp-validation-for="IconName"></span>
+                    </div>
+                </div>
+                <div class="form-group mb-4">
+                    <label class="col-md-12 p-0" asp-for="Title"></label>
+                    <div class="col-md-12 border-bottom p-0">
+                        <input asp-for="Title" placeholder="Title"
+                               class="form-control p-0 border-0">
+                        <span asp-validation-for="Title"></span>
+                    </div>
+                </div>
+                <div class="form-group mb-4">
+                    <label class="col-md-12 p-0" asp-for="Description"></label>
+                    <div class="col-md-12 border-bottom p-0">
+                        <input asp-for="Description" placeholder="Description"
+                               class="form-control p-0 border-0">
+                        <span asp-validation-for="Description"></span>
+                    </div>
+                </div>
+          
+                <div class="form-group mb-4">
+                    <div class="col-sm-12">
+                        <button class="btn btn-success" type="submit">Create</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
